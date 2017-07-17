@@ -11,7 +11,7 @@ provider "aws" {
 }
 
 module "webserver_cluster" {
-  source = "../../../modules/services/webserver-cluster"
+  source = "git::git@github.com:vScripter/terraform-uar-modules.git//webserver-cluster?ref=v0.0.1"
 
   #cluster_name           = "webservers-stage"
   #db_remote_state_bucket = "${var.db_remote_state_bucket}"
